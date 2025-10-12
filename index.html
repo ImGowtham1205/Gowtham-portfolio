@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gowtham | Portfolio</title>
+  
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+  <!-- Local CSS -->
+  <link rel="stylesheet" href="csscodes/style.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Gowtham</div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#upskills">Upskills</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm <span class="highlight">Gowtham</span></h1>
+      <p>Java & MySQL Developer | Backend Enthusiast</p>
+      <a href="#contact" class="btn">Contact Me</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <p>
+      As a passionate and detail-oriented Java and MySQL Developer, I aim to contribute to innovative software solutions by leveraging my skills in Java programming, relational database management, and software development best practices.
+    </p>
+  </section>
+
+  <!-- Current Upskills Section -->
+  <section id="upskills" class="upskills-section">
+    <h2>Current Upskills</h2>
+    <p>
+      I am proficient in Servlets, JSP, and JDBC for database integration, and I am currently advancing my skills in modern Java backend technologies, including Hibernate, Spring Boot, REST APIs, and Microservices. Once I master these frameworks, I plan to build a comprehensive project to showcase my expertise in developing scalable and robust backend applications.
+    </p>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="skills">
+    <h2>Skills</h2>
+
+    <!-- Hard Skills -->
+    <div class="skills-grid">
+      <div><i class="fa-brands fa-java"></i> Java</div>
+      <div><i class="fa-solid fa-database"></i> MySQL</div>
+      <div><i class="fa-brands fa-php"></i> PHP (Beginner)</div>
+      <div><i class="fa-solid fa-code"></i> C</div>
+      <div><i class="fa-solid fa-code"></i> C++</div>
+      <div><i class="fa-brands fa-html5"></i> HTML</div>
+      <div><i class="fa-solid fa-file-lines"></i> MS Office</div>
+    </div>
+
+    <!-- Soft Skills -->
+    <h3 class="soft-title">Soft Skills</h3>
+    <div class="skills-grid">
+      <div><i class="fa-solid fa-eye"></i> Attention To Detail</div>
+      <div><i class="fa-solid fa-users"></i> Team Work</div>
+      <div><i class="fa-solid fa-lightbulb"></i> Problem Solving</div>
+      <div><i class="fa-solid fa-check-circle"></i> Accountability</div>
+    </div>
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="education">
+    <h2>Education</h2>
+    <div class="edu-card">
+      <h3>B.Sc Computer Science (Expected 2026)</h3>
+      <p>Ramakrishna Mission Vivekananda College</p>
+    </div>
+    <div class="edu-card">
+      <h3>HSC (2021 - 2023)</h3>
+      <p>Kannada Sangha Higher Secondary School</p>
+    </div>
+    <div class="edu-card">
+      <h3>SSLC (2016 - 2021)</h3>
+      <p>Kannada Sangha Higher Secondary School</p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="projects">
+    <h2>Projects</h2>
+    <div class="project-card">
+      <h3>College Portal</h3>
+      <p>A Java-based web app using Servlets, JSP, JDBC, and MySQL with 4-tier role access: Admin (Update Or Delete Student & Staff Records), HOD (Assign Subject To Staff), Staff (Attendance Handling), Student (attendance view). Implements session management, role-based access, and CRUD with MySQL integration.</p>
+      <a href="https://github.com/ImGowtham1205/College.git" class="btn" target="_blank">View Project</a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Info</h2>
+    <ul>
+      <li><strong>📞 Phone:</strong> 7904836362</li>
+      <li><strong>📧 Email:</strong> <a href="mailto:imgowtham1205@gmail.com">imgowtham1205@gmail.com</a></li>
+      <li>
+        <strong><i class="fab fa-linkedin"></i> LinkedIn:</strong>
+        <a href="https://linkedin.com/in/gowtham-k-972a9431b" target="_blank">
+        linkedin.com/in/gowtham-k-972a9431b
+        </a>
+      </li>
+      <li>
+        <strong><i class="fab fa-github"></i> GitHub:</strong>
+        <a href="https://github.com/ImGowtham1205" target="_blank">
+           ImGowtham1205
+        </a>
+      </li>
+    </ul>
+  </section>
+
+  <footer>
+    <p>© 2025 Gowtham | All Rights Reserved</p>
+  </footer>
+
+  <script src="jscodes/script.js"></script>
+</body>
+</html>
