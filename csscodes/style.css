@@ -75,6 +75,24 @@ header {
   font-size: 1.2rem;
   margin-bottom: 20px;
 }
+
+.hero img {
+  width: 240px;                
+  height: 300px;               
+  object-fit: cover;
+  border-radius: 12px;         
+  border: 3px solid #fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+  margin-bottom: 20px;
+  transition: transform 0.3s ease;
+}
+
+.hero img:hover {
+  transform: scale(1.06);
+}
+
+
+
 .btn {
   display: inline-block;
   background: #00adb5;
@@ -191,6 +209,27 @@ h2 {
   margin: 10px auto 0;
   border-radius: 2px;
 }
+
+.hibernate-icon {
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  margin-right: 8px;
+  background-image: url("https://www.svgrepo.com/show/353874/hibernate.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  filter: brightness(0) saturate(100%) invert(44%) sepia(82%) 
+          saturate(629%) hue-rotate(141deg) brightness(97%) contrast(94%);
+  transition: 0.3s ease;
+}
+
+/* Hover effect */
+.skills-grid div:hover .hibernate-icon {
+  filter: brightness(0) invert(1);
+}
+
 
 /* Education */
 .edu-card {
