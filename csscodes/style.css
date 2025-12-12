@@ -77,10 +77,10 @@ header {
 }
 
 .hero img {
-  width: 240px;                
-  height: 300px;               
+  width: 240px;
+  height: 300px;
   object-fit: cover;
-  border-radius: 12px;         
+  border-radius: 12px;
   border: 3px solid #fff;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
   margin-bottom: 20px;
@@ -91,8 +91,12 @@ header {
   transform: scale(1.06);
 }
 
+/* Name highlight (changed to white as requested) */
+.highlight {
+  color: #ffffff;
+}
 
-
+/* Buttons */
 .btn {
   display: inline-block;
   background: #00adb5;
@@ -179,10 +183,13 @@ h2 {
   align-items: center;
   justify-content: center;
 }
-.skills-grid div i {
+.skills-grid div i,
+.skills-grid div svg,
+.skills-grid div span {
   margin-right: 8px;
-  color: #00adb5;
   font-size: 1.2rem;
+  vertical-align: middle;
+  color: #00adb5;
 }
 .skills-grid div:hover {
   background: #00adb5;
@@ -190,8 +197,11 @@ h2 {
   transform: translateY(-5px) scale(1.05);
   box-shadow: 0 6px 15px rgba(0, 173, 181, 0.3);
 }
-.skills-grid div:hover i {
+.skills-grid div:hover i,
+.skills-grid div:hover svg,
+.skills-grid div:hover span {
   color: #fff;
+  filter: none;
 }
 .soft-title {
   text-align: center;
@@ -210,6 +220,7 @@ h2 {
   border-radius: 2px;
 }
 
+/* Hibernate icon using remote SVG as background */
 .hibernate-icon {
   width: 26px;
   height: 26px;
@@ -219,17 +230,29 @@ h2 {
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-
   filter: brightness(0) saturate(100%) invert(44%) sepia(82%) 
           saturate(629%) hue-rotate(141deg) brightness(97%) contrast(94%);
   transition: 0.3s ease;
 }
 
-/* Hover effect */
-.skills-grid div:hover .hibernate-icon {
-  filter: brightness(0) invert(1);
+/* Spring Boot official inline SVG styling */
+.spring-icon {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+  margin-right: 8px;
+  vertical-align: middle;
+  color: #00adb5; /* uses currentColor for inline SVG */
+  transition: 0.25s ease;
 }
 
+/* Python Font Awesome styling */
+.python-fa {
+  margin-right: 8px;
+  font-size: 1.2rem;
+  vertical-align: middle;
+  color: #00adb5;
+}
 
 /* Education */
 .edu-card {
