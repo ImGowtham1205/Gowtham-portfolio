@@ -254,6 +254,19 @@ h2 {
   color: #00adb5;
 }
 
+/* Natural MongoDB green */
+.mongodb-icon {
+  width: 26px;
+  height: 26px;
+  display: inline-block;
+  margin-right: 8px;
+  background-image: url("https://www.svgrepo.com/show/331488/mongodb.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
 /* Education */
 .edu-card {
   background: #fff;
