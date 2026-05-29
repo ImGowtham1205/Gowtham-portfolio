@@ -1,210 +1,429 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gowtham | Portfolio</title>
-  
-  <!-- Font Awesome -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-
-  <!-- Local CSS -->
-  <link rel="stylesheet" href="csscodes/style.css" />
-</head>
-<body>
-  <!-- Navbar -->
-  <header>
-    <nav class="navbar">
-      <div class="logo">Gowtham</div>
-      <ul class="nav-links" id="navLinks">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#upskills">Upskills</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#education">Education</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-      <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-    </nav>
-  </header>
-
-  <!-- Hero Section -->
-  <section id="home" class="hero">
-    <div class="hero-content">
-      <img src="image/Myphoto.jpeg" alt="Myphoto">
-      <h1>Hi, I'm <span class="highlight">Gowtham</span></h1>
-      <p>Java & MySQL Developer | Backend Enthusiast</p>
-      <a href="#contact" class="btn">Contact Me</a>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gowtham | Java & Spring Boot Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+    <link rel="stylesheet" href="csscodes/style.css" />
+  </head>
+  <body>
+    <!-- Floating Background -->
+    <div class="bg-animation">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
     </div>
-  </section>
 
-  <!-- About Section -->
-  <section id="about" class="about">
-    <h2>About Me</h2>
-    <p>
-      As a passionate and detail-oriented Java and MySQL Developer, I aim to contribute to innovative software solutions by leveraging my skills in Java programming, relational database management, and software development best practices.
-    </p>
-  </section>
+    <!-- ================= NAVBAR ================= -->
 
-  <!-- Current Upskills Section -->
-  <section id="upskills" class="upskills-section">
-    <h2>Current Upskills</h2>
-    <p>
-      I am proficient in Spring boot framework with REST APIs Web Service, and I am currently advancing my skills in Microservices and Payment gateway. 
-  </section>
+    <header>
+      <nav class="navbar">
+        <div class="logo">Gowtham</div>
 
-<!-- Education Section -->
-  <section id="education" class="education">
-    <h2>Education</h2>
-    <div class="edu-card">
-      <h3>B.Sc Computer Science (Expected Graduation :2026)</h3>
-      <p>Ramakrishna Mission Vivekananda College</p>
-    </div>
-    <div class="edu-card">
-      <h3>HSC (2021 - 2023)</h3>
-      <p>Kannada Sangha Higher Secondary School</p>
-    </div>
-    <div class="edu-card">
-      <h3>SSLC (2016 - 2021)</h3>
-      <p>Kannada Sangha Higher Secondary School</p>
-    </div>
-  </section>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#upskills">Upskills</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
 
-  <!-- Skills Section -->
-  <section id="skills" class="skills">
-    <h2>Skills</h2>
+        <div class="menu-toggle" onclick="toggleMenu()">
+          <i class="fas fa-bars"></i>
+        </div>
+      </nav>
+    </header>
 
-    <div class="skills-grid">
-      <div><i class="fa-brands fa-java"></i> JAVA</div>
-      <div><span class="hibernate-icon"></span> HIBERNATE (Intermediate)</div>
+    <!-- ================= HERO ================= -->
 
-      <!-- Spring Boot official SVG icon -->
-      <div>
-        <svg class="spring-icon" role="img" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-          <path fill="currentColor" d="M23.693 10.705L13.29.302a1.031 1.031 0 00-1.459 0L.308 11.826a1.031 1.031 0 000 1.459l10.403 10.403a1.031 1.031 0 001.459 0l11.523-11.523a1.031 1.031 0 000-1.46zM12 18.708a6.708 6.708 0 110-13.416 6.708 6.708 0 010 13.416zm0-11.417a4.708 4.708 0 100 9.416 4.708 4.708 0 000-9.416z"/>
-        </svg>
-        SPRING BOOT (Intermediate)
+    <section id="home" class="hero">
+      <div class="hero-container">
+        <div class="hero-image">
+          <img src="image/Myphoto.jpeg" alt="Gowtham" />
+        </div>
+
+        <div class="hero-content">
+          <p class="hero-greeting">👋 Hello, I'm</p>
+
+          <h1>Gowtham</h1>
+
+          <h2>
+            <span id="typing"></span>
+          </h2>
+
+          <p class="hero-description">
+            Computer Science Graduate passionate about Java, Spring Boot,
+            Microservices, WebFlux, and building scalable backend applications.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#contact" class="btn primary-btn"> Contact Me </a>
+
+            <a href="Downloads\Resume.pdf" download class="btn secondary-btn">
+              Download Resume
+            </a>
+          </div>
+
+          <div class="social-icons">
+            <a href="https://github.com/ImGowtham1205" target="_blank">
+              <i class="fab fa-github"></i>
+            </a>
+
+            <a
+              href="https://linkedin.com/in/gowtham-k-972a9431b"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+
+            <a href="mailto:imgowtham1205@gmail.com">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </div>
+        </div>
       </div>
-      <div><i class="fa-solid fa-database"></i> MySQL</div>
-      <div><span class="mongodb-icon"></span>MONGODB</div>
-      <div><i class="fa-solid fa-code"></i> C</div>
-      <div><i class="fa-solid fa-code"></i> C++</div>
-      <div><i class="fa-brands fa-html5"></i> HTML</div>
-      <div><i class="fa-brands fa-php"></i> PHP (Beginner)</div>
-      <div><i class="fa-brands fa-python python-fa"></i> PYTHON (Beginner)</div>
-      <div><i class="fa-solid fa-file-lines"></i> MS Office</div>
-    </div>
+    </section>
 
-     <!-- Projects Section -->
-     <section id="projects" class="projects">
-    <h2>Projects</h2>
-    <div class="project-card">
-      <h3>College Portal</h3>
-      <p>A Java-based web app using Servlets, JSP, JDBC, and MySQL with 4-tier role access: Admin (Update Or Delete Student & Staff Records), HOD (Assign Subject To Staff), Staff (Attendance Handling), Student (attendance view). Implements session management, role-based access, and CRUD with MySQL integration.</p>
-      <a href="https://github.com/ImGowtham1205/College.git" class="btn" target="_blank">View Project</a>
-    </div>
-    <br>
-     <div class="project-card">
-      <h3>Notes Application</h3>
-      <p>A full-stack Note Management Web Application built with Spring Boot, JSP front-end, and MySQL database — implementing secure user authentication and authorization using Spring Security, JWT, and BCrypt password encryption.</p>
-      <a href="https://github.com/ImGowtham1205/Notes.git" class="btn" target="_blank">View Project</a>
-    </div>
-    <div class="project-card">
-      <h3>🛒 E-Commerce Web Application</h3>
-      <p>This is a full-stack e-commerce web application built using React for the frontend and Java Spring Boot for the backend.
-    The application follows modern security practices and supports role-based access control.</p>
-       <!-- TECH STACK -->
-  <h3>🔧 Tech Stack</h3>
-  <ul class="project-points">
-    <li><strong>Frontend:</strong> React.js</li>
-    <li><strong>Backend:</strong> Java Spring Boot</li>
-    <li><strong>Databases:</strong> MySQL, MongoDB</li>
-    <li><strong>Security:</strong> Spring Security, JWT Authentication</li>
-    <li><strong>Password Encryption:</strong> BCrypt</li>
-    <li><strong>Email Service:</strong> Java Mail Sender</li>
-  </ul>
+    <!-- ================= STATS ================= -->
 
-  <!-- AUTH -->
-  <h3>🔐 Authentication & Authorization</h3>
-  <ul class="project-points">
-    <li>Secure login and registration using JWT</li>
-    <li>Two-tier role-based authorization</li>
-    <ul class="sub-points">
-      <li><strong>USER:</strong> Browse products and place orders</li>
-      <li><strong>ADMIN:</strong> Manage products and orders</li>
-    </ul>
-    <li>Passwords securely stored using BCrypt hashing</li>
-  </ul>
+    <section class="stats-section reveal">
+      <div class="stats-grid">
+        <div class="stat-card">
+          <h2>3</h2>
 
-  <!-- FEATURES -->
-  <h3>✨ Features</h3>
-  <ul class="project-points">
-    <li><strong>User</strong></li>
-    <ul class="sub-points">
-      <li>Register & login</li>
-      <li>Browse products</li>
-      <li>Purchase products</li>
-      <li>Receive email notifications</li>
-    </ul>
+          <p>Projects Completed</p>
+        </div>
 
-    <li><strong>Admin</strong></li>
-    <ul class="sub-points">
-      <li>Add, update, delete products</li>
-      <li>View and manage orders</li>
-      <li>Control product availability</li>
-      <li>Receive email notifications</li>
-    </ul>
-  </ul>
+        <div class="stat-card">
+          <h2>15+</h2>
 
-  <!-- ARCHITECTURE -->
-  <h3>🏗 Architecture</h3>
-  <ul class="project-points">
-    <li>React frontend communicates with Spring Boot REST APIs</li>
-    <li>MySQL used for structured relational data</li>
-    <li>MongoDB used for flexible or document-based storage</li>
-    <li>Stateless authentication using JWT</li>
-  </ul>
+          <p>Technologies Learned</p>
+        </div>
 
-      <a href="https://github.com/ImGowtham1205/E-Commerce-Frontend.git" class="btn" target="_blank">Front-end code</a>
-      <a href="https://github.com/ImGowtham1205/E-Commerce-backend.git" class="btn" target="_blank">Back-end code</a>
-    </div>
-  </section>
+        <div class="stat-card">
+          <h2>2026</h2>
 
-    <h3 class="soft-title">Soft Skills</h3>
-    <div class="skills-grid">
-      <div><i class="fa-solid fa-eye"></i> Attention To Detail</div>
-      <div><i class="fa-solid fa-users"></i> Team Work</div>
-      <div><i class="fa-solid fa-lightbulb"></i> Problem Solving</div>
-      <div><i class="fa-solid fa-check-circle"></i> Accountability</div>
-    </div>
-  </section>
+          <p>Graduate</p>
+        </div>
+      </div>
+    </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
-    <h2>Contact Info</h2>
-    <ul>
-      <li><strong>📞 Phone:</strong> 7904836362</li>
-      <li><strong>📧 Email:</strong> <a href="mailto:imgowtham1205@gmail.com">imgowtham1205@gmail.com</a></li>
-      <li>
-        <strong><i class="fab fa-linkedin"></i> LinkedIn:</strong>
-        <a href="https://linkedin.com/in/gowtham-k-972a9431b" target="_blank">
-        linkedin.com/in/gowtham-k-972a9431b
+    <!-- ================= ABOUT ================= -->
+
+    <section id="about" class="about reveal">
+      <h2 class="section-title">About Me</h2>
+
+      <div class="glass-card">
+        <p>
+          Computer Science undergraduate with hands-on experience in Java,
+          Spring Boot, Spring Security, REST APIs, JWT Authentication, MySQL,
+          Hibernate, Docker, and Microservices.
+        </p>
+
+        <br />
+
+        <p>
+          Skilled in building secure and scalable backend applications with
+          real-world project experience in authentication, payment gateway
+          integration, role-based systems, and reactive programming using Spring
+          WebFlux.
+        </p>
+      </div>
+    </section>
+
+    <!-- ================= UPSKILLS ================= -->
+
+    <section id="upskills" class="upskills-section reveal">
+      <h2 class="section-title">Current Upskills</h2>
+
+      <div class="glass-card">
+        <p>Currently deepening my expertise in:</p>
+
+        <div class="upskills-grid">
+          <div>
+            <i class="fas fa-network-wired"></i>
+            Microservices
+          </div>
+
+          <div>
+            <i class="fas fa-bolt"></i>
+            Spring WebFlux
+          </div>
+
+          <div>
+            <i class="fas fa-route"></i>
+            API Gateway
+          </div>
+
+          <div>
+            <i class="fas fa-credit-card"></i>
+            Razorpay Integration
+          </div>
+
+          <div>
+            <i class="fab fa-docker"></i>
+            Docker
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+
+    <section id="education" class="education reveal">
+      <h2 class="section-title">Education</h2>
+
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>B.Sc Computer Science</h3>
+
+            <span> 2023 - 2026 </span>
+
+            <p>Ramakrishna Mission Vivekananda College</p>
+
+            <small> Result Awaited </small>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>HSC</h3>
+
+            <span> 2021 - 2023 </span>
+
+            <p>Kannada Sangha Higher Secondary School</p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <div class="timeline-content">
+            <h3>SSLC</h3>
+
+            <span> 2016 - 2021 </span>
+
+            <p>Kannada Sangha Higher Secondary School</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+
+    <section id="skills" class="skills reveal">
+      <h2 class="section-title">Technical Skills</h2>
+
+      <div class="skills-grid">
+        <div><i class="fab fa-java"></i> Java</div>
+        <div><i class="fa-solid fa-code"></i> C</div> 
+        <div><i class="fa-solid fa-code"></i> C++</div>
+        <div><i class="fab fa-python"></i> Python(Basics)</div>
+        <div><i class="fas fa-leaf"></i> Spring Boot <br>(Intermediate)</div>
+        <div><i class="fas fa-shield-halved"></i> Spring Security <br> (Intermediate)</div>
+        <div><i class="fas fa-network-wired"></i> Microservices<br>(Intermediate)</div>
+        <div><i class="fas fa-server"></i> Hibernate<br>(Intermediate)</div>
+        <div><i class="fas fa-bolt"></i> WebFlux<br>(Intermediate)</div>
+        <div><i class="fas fa-plug"></i> REST APIs</div>
+        <div><i class="fas fa-key"></i> JWT</div>
+        <div><i class="fas fa-database"></i> MySQL(Intermediate)</div>
+        <div><span class="mongodb-icon"></span>MONGODB<br>(Intermediate)</div>
+        <div><i class="fab fa-docker"></i> Docker(Basics)</div>
+        <div><i class="fa-solid fa-vial"></i> JUnit & Mockito</div>
+        <div><i class="fa-solid fa-terminal"></i> Postman</div>
+        <div><i class="fab fa-git-alt"></i> Git</div>
+        <div><i class="fab fa-github"></i> GitHub</div>
+        <div><i class="fa-solid fa-file-lines"></i> MS Office</div>
+      </div>
+
+      <h3 class="soft-skill-title">Soft Skills</h3>
+      <div class="skills-grid">
+        <div>
+          <i class="fas fa-eye"></i>
+          Attention To Detail
+        </div>
+
+        <div>
+          <i class="fas fa-users"></i>
+          Team Work
+        </div>
+        <div>
+          <i class="fas fa-lightbulb"></i>
+          Problem Solving
+        </div>
+
+        <div>
+          <i class="fas fa-check-circle"></i>
+          Accountability
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+
+    <section id="projects" class="projects reveal">
+      <h2 class="section-title">Featured Projects</h2>
+
+      <div class="project-card">
+        <h3>🎓 College Portal</h3>
+
+        <p>
+          A Java-based web app using Servlets, JSP, JDBC, and MySQL with 4-tier
+          role access: Admin (Update/Delete Student & Staff Records), HOD
+          (Assign Subject To Staff), Staff (Attendance Handling), Student
+          (Attendance View). Implements session management, role-based access,
+          and CRUD with MySQL integration.
+        </p>
+
+        <a
+          href="https://github.com/ImGowtham1205/College.git"
+          target="_blank"
+          class="btn primary-btn"
+        >
+          View Project
         </a>
-      </li>
-      <li>
-        <strong><i class="fab fa-github"></i> GitHub:</strong>
-        <a href="https://github.com/ImGowtham1205" target="_blank">
-           ImGowtham1205
+      </div>
+
+      <div class="project-card">
+        <h3>📝 Notes Application</h3>
+
+        <p>
+          A full-stack Note Management Web Application built with Spring Boot,
+          JSP front-end, and MySQL database — implementing secure user
+          authentication and authorization using Spring Security, JWT, and
+          BCrypt password encryption.
+        </p>
+
+        <a
+          href="https://github.com/ImGowtham1205/Notes.git"
+          target="_blank"
+          class="btn primary-btn"
+        >
+          View Project
         </a>
-      </li>
-    </ul>
-  </section>
+      </div>
 
-  <footer>
-    <p>© 2025 Gowtham | All Rights Reserved</p>
-  </footer>
+      <div class="project-card">
+        <h3>🛒 E-Commerce Platform</h3>
 
-  <script src="jscodes/script.js"></script>
-</body>
+        <p>
+          A full-stack e-commerce platform built with React (frontend) and Java
+          Spring Boot (backend) following a Microservices architecture with an
+          API Gateway. Supports secure role-based access, OAuth2 social login,
+          and Razorpay payment integration.
+        </p>
+
+        <h3>🔧 Tech Stack</h3>
+        <ul class="project-points">
+          <li><strong>Frontend:</strong> React.js</li>
+          <li><strong>Backend:</strong> Java Spring Boot, WebFlux</li>
+          <li><strong>Architecture:</strong> Microservices with API Gateway</li>
+          <li><strong>Databases:</strong> MySQL, MongoDB</li>
+          <li>
+            <strong>Security:</strong> Spring Security, JWT Authentication,
+            OAuth2 (Google & Amazon)
+          </li>
+          <li><strong>Password Encryption:</strong> BCrypt</li>
+          <li><strong>Payment Gateway:</strong> Razorpay</li>
+          <li><strong>Email Service:</strong> Java Mail Sender</li>
+        </ul>
+
+        <!-- AUTH -->
+        <h3>🔐 Authentication & Authorization</h3>
+        <ul class="project-points">
+          <li>Secure login and registration using JWT</li>
+          <li>OAuth2 social login via Google & Amazon</li>
+          <li>Two-tier role-based authorization</li>
+          <ul class="sub-points">
+            <li>
+              <strong>USER:</strong> Browse products, place orders, and make
+              payments
+            </li>
+            <li><strong>ADMIN:</strong> Manage products and orders</li>
+          </ul>
+          <li>Passwords securely stored using BCrypt hashing</li>
+        </ul>
+
+        <!-- FEATURES -->
+        <h3>✨ Features</h3>
+        <ul class="project-points">
+          <li><strong>User</strong></li>
+          <ul class="sub-points">
+            <li>Register & login (including OAuth2)</li>
+            <li>Browse products</li>
+            <li>Purchase products via Razorpay</li>
+            <li>Receive email notifications</li>
+          </ul>
+          <li><strong>Admin</strong></li>
+          <ul class="sub-points">
+            <li>Add, update, delete products</li>
+            <li>View and manage orders</li>
+            <li>Control product availability</li>
+            <li>Receive email notifications</li>
+          </ul>
+        </ul>
+
+        <!-- ARCHITECTURE -->
+        <h3>🏗 Architecture</h3>
+        <ul class="project-points">
+          <li>Microservices architecture managed through an API Gateway</li>
+          <li>React frontend communicates with Spring Boot REST APIs</li>
+          <li>Reactive programming with Spring WebFlux</li>
+          <li>MySQL used for structured relational data</li>
+          <li>MongoDB used for flexible or document-based storage</li>
+          <li>Stateless authentication using JWT</li>
+        </ul>
+
+        <a
+          href="https://github.com/ImGowtham1205/E-Commerce-Frontend.git"
+          target="_blank"
+          class="btn primary-btn"
+        >
+          Frontend
+        </a>
+
+        <a
+          href="https://github.com/ImGowtham1205/E-commerce-backend-microservices.git"
+          target="_blank"
+          class="btn secondary-btn"
+        >
+          Backend
+        </a>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+
+    <section id="contact" class="contact reveal">
+      <h2 class="section-title">Contact Me</h2>
+
+      <div class="glass-card contact-card">
+        <p>📞 7904836362</p>
+        <p>📧 imgowtham1205@gmail.com</p>
+        <p>📍 Chennai, Tamil Nadu</p>
+      </div>
+    </section>
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+      <p>© 2026 Gowtham | Java & Spring Boot Developer</p>
+    </footer>
+
+    <script src="jscodes/script.js"></script>
+  </body>
 </html>
+```
