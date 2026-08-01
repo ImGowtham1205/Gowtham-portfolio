@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Gowtham | Java & Spring Boot Developer</title>
+    <title>Gowtham | Backend Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
       rel="stylesheet"
     />
     <link
@@ -17,14 +17,8 @@
     <link rel="stylesheet" href="csscodes/style.css" />
   </head>
   <body>
-    <!-- Floating Background -->
-    <div class="bg-animation">
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-      <span></span>
-    </div>
+    <!-- Faint grid background (see .bg-animation in style.css) -->
+    <div class="bg-animation"></div>
 
     <!-- ================= NAVBAR ================= -->
 
@@ -53,11 +47,23 @@
     <section id="home" class="hero">
       <div class="hero-container">
         <div class="hero-image">
-          <img src="image/Myphoto.jpeg" alt="Gowtham" />
+          <div class="title-bar">
+            <span class="dot red"></span>
+            <span class="dot yellow"></span>
+            <span class="dot green"></span>
+            <span class="label">gowtham@portfolio: ~</span>
+          </div>
+          <div class="photo-wrap">
+            <img src="image/Myphoto.jpeg" alt="Gowtham" />
+          </div>
+          <div class="status-line">
+            <span class="status-dot"></span>
+            available for work
+          </div>
         </div>
 
         <div class="hero-content">
-          <p class="hero-greeting">👋 Hello, I'm</p>
+          <p class="hero-greeting">whoami</p>
 
           <h1>Gowtham</h1>
 
@@ -66,14 +72,16 @@
           </h2>
 
           <p class="hero-description">
-            Computer Science Graduate passionate about Java, Spring Boot,
-            Microservices, WebFlux, and building scalable backend applications.
+            Computer Science graduate with hands-on experience building
+            production-ready backend systems in Java and Spring Boot. Built a
+            full-stack e-commerce platform with microservices, Redis caching,
+            OAuth2/JWT authentication, and Razorpay payment integration.
           </p>
 
           <div class="hero-buttons">
             <a href="#contact" class="btn primary-btn"> Contact Me </a>
 
-            <a href="Downloads\Resume.pdf" download class="btn secondary-btn">
+            <a href="Downloads/Gowtham_K_Resume.pdf" download class="btn secondary-btn">
               Download Resume
             </a>
           </div>
@@ -104,19 +112,16 @@
       <div class="stats-grid">
         <div class="stat-card">
           <h2>3</h2>
-
           <p>Projects Completed</p>
         </div>
 
         <div class="stat-card">
-          <h2>15+</h2>
-
-          <p>Technologies Learned</p>
+          <h2>10+</h2>
+          <p>API Endpoints Integrated</p>
         </div>
 
         <div class="stat-card">
           <h2>2026</h2>
-
           <p>Graduate</p>
         </div>
       </div>
@@ -129,27 +134,28 @@
 
       <div class="glass-card">
         <p>
-          Computer Science undergraduate with hands-on experience in Java,
-          Spring Boot, Spring Security, REST APIs, JWT Authentication, MySQL,
-          Hibernate, Docker, and Microservices.
+          Computer Science graduate with hands-on experience building
+          production-ready backend systems in Java and Spring Boot. Comfortable
+          across the stack, from REST API design and database optimization to
+          caching strategy and React frontend integration.
         </p>
 
         <br />
 
         <p>
-          Skilled in building secure and scalable backend applications with
-          real-world project experience in authentication, payment gateway
-          integration, role-based systems, and reactive programming using Spring
-          WebFlux.
+          Skilled in Spring Security, JWT authentication, OAuth2 social login,
+          Redis caching, Hibernate, MySQL, MongoDB, and Microservices with an
+          API Gateway. Experienced in payment gateway integration (Razorpay)
+          and role-based access systems.
         </p>
 
         <br />
 
         <p>
-          Seeking an entry-level Software Developer role to apply my technical skills, contribute to impactful projects, 
-          and grow as a backend developer in a dynamic team environment.
+          Seeking an entry-level Backend/Software Developer role to apply my
+          technical skills, contribute to impactful projects, and grow as a
+          backend developer in a dynamic team environment.
         </p>
-
       </div>
     </section>
 
@@ -178,6 +184,11 @@
           </div>
 
           <div>
+            <i class="fas fa-bolt-lightning"></i>
+            Redis Caching
+          </div>
+
+          <div>
             <i class="fas fa-credit-card"></i>
             Razorpay Integration
           </div>
@@ -199,20 +210,15 @@
         <div class="timeline-item">
           <div class="timeline-content">
             <h3>B.Sc Computer Science</h3>
-
-            <span> 2023 - 2026 </span> <br />
-            <span> CGPA: 7.38 / 10 </span>
+            <span> 2023 - 2026 &nbsp;|&nbsp; CGPA: 7.38 / 10 </span>
             <p>Ramakrishna Mission Vivekananda College</p>
-            
           </div>
         </div>
 
         <div class="timeline-item">
           <div class="timeline-content">
             <h3>HSC</h3>
-
             <span> 2021 - 2023 </span>
-
             <p>Kannada Sangha Higher Secondary School</p>
           </div>
         </div>
@@ -220,9 +226,7 @@
         <div class="timeline-item">
           <div class="timeline-content">
             <h3>SSLC</h3>
-
             <span> 2016 - 2021 </span>
-
             <p>Kannada Sangha Higher Secondary School</p>
           </div>
         </div>
@@ -236,26 +240,26 @@
 
       <div class="skills-grid">
         <div><i class="fab fa-java"></i> Java</div>
-        <div><i class="fa-solid fa-code"></i> C</div> 
+        <div><i class="fa-solid fa-code"></i> C</div>
         <div><i class="fa-solid fa-code"></i> C++</div>
-        <div><i class="fab fa-python"></i> Python(Basics)</div>
+        <div><i class="fab fa-python"></i> Python (Basic)</div>
         <div><i class="fas fa-leaf"></i> Spring Boot</div>
-        <div><i class="fas fa-shield-halved"></i> Spring Security </div>
+        <div><i class="fas fa-shield-halved"></i> Spring Security</div>
         <div><i class="fas fa-network-wired"></i> Microservices</div>
-        <div><i class="fas fa-server"></i> Hibernate<br></div>
-        <div><i class="fas fa-bolt"></i> WebFlux<br></div>
+        <div><i class="fas fa-server"></i> Hibernate</div>
+        <div><i class="fas fa-bolt"></i> WebFlux</div>
         <div><i class="fas fa-plug"></i> REST APIs</div>
         <div><i class="fas fa-key"></i> JWT</div>
         <div><i class="fas fa-database"></i> JDBC</div>
         <div><i class="fas fa-database"></i> MySQL</div>
-        <div><span class="mongodb-icon"></span>MONGODB<br></div>
-        <div><i class="fas fa-table"></i> SQL Queries</div>
-        <div><i class="fab fa-docker"></i> Docker(Basics)</div>
+        <div><span class="mongodb-icon"></span> MongoDB</div>
+        <div><i class="fas fa-bolt-lightning"></i> Redis</div>
+        <div><i class="fas fa-table"></i> SQL</div>
+        <div><i class="fab fa-docker"></i> Docker (Basic)</div>
         <div><i class="fa-solid fa-vial"></i> JUnit & Mockito</div>
         <div><i class="fa-solid fa-terminal"></i> Postman</div>
         <div><i class="fab fa-git-alt"></i> Git</div>
         <div><i class="fab fa-github"></i> GitHub</div>
-        <div><i class="fa-solid fa-file-lines"></i> MS Office</div>
       </div>
 
       <h3 class="soft-skill-title">System Design</h3>
@@ -266,30 +270,15 @@
         <div><i class="fas fa-bolt-lightning"></i> Caching</div>
         <div><i class="fas fa-database"></i> Database Scaling</div>
         <div><i class="fas fa-layer-group"></i> Message Queues</div>
-        <div><i class="fas fa-chart-line"></i> Monitoring & Observability</div>
-        <div><i class="fas fa-magnifying-glass-chart"></i> API Monitoring</div>
+        <div><i class="fas fa-chart-line"></i> Monitoring</div>
       </div>
 
       <h3 class="soft-skill-title">Soft Skills</h3>
       <div class="skills-grid">
-        <div>
-          <i class="fas fa-eye"></i>
-          Attention To Detail
-        </div>
-
-        <div>
-          <i class="fas fa-users"></i>
-          Team Work
-        </div>
-        <div>
-          <i class="fas fa-lightbulb"></i>
-          Problem Solving
-        </div>
-
-        <div>
-          <i class="fas fa-check-circle"></i>
-          Accountability
-        </div>
+        <div><i class="fas fa-eye"></i> Attention To Detail</div>
+        <div><i class="fas fa-users"></i> Team Work</div>
+        <div><i class="fas fa-lightbulb"></i> Problem Solving</div>
+        <div><i class="fas fa-check-circle"></i> Accountability</div>
       </div>
     </section>
 
@@ -299,113 +288,50 @@
       <h2 class="section-title">Featured Projects</h2>
 
       <div class="project-card">
-        <h3>🎓 College Portal</h3>
+        <h3>E-Commerce Platform — Spring Boot Microservices</h3>
 
         <p>
-          A Java-based web app using Servlets, JSP, JDBC, and MySQL with 4-tier
-          role access: Admin (Update/Delete Student & Staff Records), HOD
-          (Assign Subject To Staff), Staff (Attendance Handling), Student
-          (Attendance View). Implements session management, role-based access,
-          and CRUD with MySQL integration.
+          A scalable e-commerce backend built with Spring Boot microservices
+          and an API Gateway for centralized routing, paired with a React
+          frontend across 10+ integrated endpoints.
         </p>
 
-        <a
-          href="https://github.com/ImGowtham1205/College.git"
-          target="_blank"
-          class="btn primary-btn"
-        >
-          View Project
-        </a>
-      </div>
+        <div class="tech-stack">
+          <span>Spring Boot</span>
+          <span>Microservices</span>
+          <span>API Gateway</span>
+          <span>Redis</span>
+          <span>JWT</span>
+          <span>OAuth2</span>
+          <span>Razorpay</span>
+          <span>MySQL</span>
+          <span>MongoDB</span>
+          <span>React</span>
+        </div>
 
-      <div class="project-card">
-        <h3>📝 Notes Application</h3>
-
-        <p>
-          A full-stack Note Management Web Application built with Spring Boot,
-          JSP front-end, and MySQL database — implementing secure user
-          authentication and authorization using Spring Security, JWT, and
-          BCrypt password encryption.
-        </p>
-
-        <a
-          href="https://github.com/ImGowtham1205/Notes.git"
-          target="_blank"
-          class="btn primary-btn"
-        >
-          View Project
-        </a>
-      </div>
-
-      <div class="project-card">
-        <h3>🛒 E-Commerce Platform</h3>
-
-        <p>
-          A full-stack e-commerce platform built with React (frontend) and Java
-          Spring Boot (backend) following a Microservices architecture with an
-          API Gateway. Supports secure role-based access, OAuth2 social login,
-          and Razorpay payment integration.
-        </p>
-
-        <h3>🔧 Tech Stack</h3>
         <ul class="project-points">
-          <li><strong>Frontend:</strong> React.js</li>
-          <li><strong>Backend:</strong> Java Spring Boot, WebFlux</li>
-          <li><strong>Architecture:</strong> Microservices with API Gateway</li>
-          <li><strong>Databases:</strong> MySQL, MongoDB</li>
           <li>
-            <strong>Security:</strong> Spring Security, JWT Authentication,
-            OAuth2 (Google & Amazon)
+            Engineered a scalable e-commerce backend using Spring Boot
+            microservices with an API Gateway for centralized routing
           </li>
-          <li><strong>Password Encryption:</strong> BCrypt</li>
-          <li><strong>Payment Gateway:</strong> Razorpay</li>
-          <li><strong>Email Service:</strong> Java Mail Sender</li>
-        </ul>
-
-        <!-- AUTH -->
-        <h3>🔐 Authentication & Authorization</h3>
-        <ul class="project-points">
-          <li>Secure login and registration using JWT</li>
-          <li>OAuth2 social login via Google & Amazon</li>
-          <li>Two-tier role-based authorization</li>
-          <ul class="sub-points">
-            <li>
-              <strong>USER:</strong> Browse products, place orders, and make
-              payments
-            </li>
-            <li><strong>ADMIN:</strong> Manage products and orders</li>
-          </ul>
-          <li>Passwords securely stored using BCrypt hashing</li>
-        </ul>
-
-        <!-- FEATURES -->
-        <h3>✨ Features</h3>
-        <ul class="project-points">
-          <li><strong>User</strong></li>
-          <ul class="sub-points">
-            <li>Register & login (including OAuth2)</li>
-            <li>Browse products</li>
-            <li>Purchase products via Razorpay</li>
-            <li>Receive email notifications</li>
-          </ul>
-          <li><strong>Admin</strong></li>
-          <ul class="sub-points">
-            <li>Add, update, delete products</li>
-            <li>View and manage orders</li>
-            <li>Control product availability</li>
-            <li>Receive email notifications</li>
-          </ul>
-        </ul>
-
-        <!-- ARCHITECTURE -->
-        <h3>🏗 Architecture</h3>
-        <ul class="project-points">
-          <li>Microservices architecture managed through an API Gateway</li>
-          <li>React frontend communicates with Spring Boot REST APIs</li>
-          <li>Reactive programming with Spring WebFlux</li>
-          <li>MySQL used for structured relational data</li>
-          <li>MongoDB used for flexible or document-based storage</li>
-          <li>Stateless authentication using JWT</li>
+          <li>
+            Implemented Redis caching (<code>@Cacheable</code>,
+            <code>@CachePut</code>, <code>@CacheEvict</code>) across services,
+            resolving cache-key mismatches and Spring AOP self-invocation
+            issues to keep data consistent
+          </li>
+          <li>
+            Secured REST APIs with JWT authentication and OAuth2 social login
+            (Google & Amazon) for seamless onboarding
+          </li>
+          <li>
+            Integrated Razorpay payment gateway handling end-to-end order and
+            payment processing, including refund failure handling
+          </li>
+          <li>
+            Collaborated with a React frontend to deliver seamless API
+            integration across 10+ endpoints
+          </li>
         </ul>
 
         <a
@@ -422,6 +348,84 @@
           class="btn secondary-btn"
         >
           Backend
+        </a>
+      </div>
+
+      <div class="project-card">
+        <h3>Notes Application — Spring Boot + JWT</h3>
+
+        <p>
+          A secure, RESTful notes management system with full CRUD
+          functionality and stateless authentication.
+        </p>
+
+        <div class="tech-stack">
+          <span>Spring Boot</span>
+          <span>MySQL</span>
+          <span>JWT</span>
+          <span>BCrypt</span>
+        </div>
+
+        <ul class="project-points">
+          <li>
+            Built a secure, RESTful notes management system using Spring Boot
+            and MySQL with full CRUD functionality
+          </li>
+          <li>
+            Implemented stateless JWT authentication, eliminating session
+            overhead and improving API scalability
+          </li>
+          <li>
+            Secured user passwords using BCrypt hashing, ensuring zero
+            plain-text credential storage
+          </li>
+        </ul>
+
+        <a
+          href="https://github.com/ImGowtham1205/Notes.git"
+          target="_blank"
+          class="btn primary-btn"
+        >
+          View Project
+        </a>
+      </div>
+
+      <div class="project-card">
+        <h3>CollegePortal — Servlets, JSP, JDBC</h3>
+
+        <p>
+          A role-based web application supporting 4 distinct user roles, with
+          session-based authentication and an optimized relational schema.
+        </p>
+
+        <div class="tech-stack">
+          <span>Servlets</span>
+          <span>JSP</span>
+          <span>JDBC</span>
+          <span>MySQL</span>
+        </div>
+
+        <ul class="project-points">
+          <li>
+            Architected a role-based web application supporting 4 distinct
+            user roles (Admin, Faculty, Student, HOD)
+          </li>
+          <li>
+            Implemented session-based authentication and authorization,
+            enforcing strict role boundaries
+          </li>
+          <li>
+            Designed optimized CRUD operations with a normalized relational
+            schema, improving data retrieval efficiency by ~30%
+          </li>
+        </ul>
+
+        <a
+          href="https://github.com/ImGowtham1205/College.git"
+          target="_blank"
+          class="btn primary-btn"
+        >
+          View Project
         </a>
       </div>
     </section>

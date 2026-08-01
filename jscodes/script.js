@@ -1,4 +1,3 @@
-
 // ================================
 // MOBILE MENU TOGGLE
 // ================================
@@ -30,12 +29,11 @@ document
 // ================================
 
 const roles = [
-    "Java Developer",
-    "Spring Boot Developer",
-    "Backend Enthusiast",
-    "Microservices Learner",
-    "WebFlux Developer",
-    "REST API Developer"
+    "Backend Developer",
+    "Java & Spring Boot Developer",
+    "Microservices Developer",
+    "REST API Developer",
+    "Spring Security | JWT | OAuth2"
 ];
 
 let roleIndex = 0;
@@ -370,5 +368,5 @@ if (footer) {
 
 console.log(
     "%cPortfolio Loaded Successfully 🚀",
-    "color:#22d3ee;font-size:16px;font-weight:bold;"
+    "color:#f2b134;font-size:16px;font-weight:bold;"
 );
