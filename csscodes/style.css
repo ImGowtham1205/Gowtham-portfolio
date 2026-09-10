@@ -554,6 +554,23 @@ section {
   vertical-align: middle;
 }
 
+.kafka-icon {
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+  margin-right: 8px;
+  background-color: #5fd97a;
+  -webkit-mask-image: url("https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/apachekafka.svg");
+  mask-image: url("https://cdn.jsdelivr.net/npm/simple-icons@v11/icons/apachekafka.svg");
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+  mask-position: center;
+  -webkit-mask-size: contain;
+  mask-size: contain;
+  vertical-align: middle;
+}
+
 /* ================= PROJECTS ================= */
 
 .projects {
